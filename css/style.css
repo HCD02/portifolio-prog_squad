@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", "sans-serif";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.background {
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabecalho-link {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabecalho-link a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabecalho-link a:hover {
+    color: #2ecc71;
+    transition: 0.3s all;
+}
+
+.logo {
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.imagem-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+.imagem-carrosel {
+    width: 50px;
+}
+
+.button-contato {
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 150px;
+    transition: 0.5s all;
+}
+
+.button-contato:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.container-text {
+    padding: 150px;
+}
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh; /* Aumente a altura se necessário */
+    position: relative;
+    overflow: hidden;
+    background-color: #fff; /* Cor de fundo cinza claro */
+    padding: 20px; /* Adicione um padding se desejar espaço ao redor do carrossel */
+    border-radius: 8px; /* Cantos arredondados (opcional) */
+}
+
+.carrossel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.perfil {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil h3 {
+    margin: 20px 0 10px 0;
+    font-size: 2rem;
+}
+
+.perfil p {
+    font-size: 1.2rem;
+}
+
+.prev, .next {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 10; /* Certifique-se de que os botões estejam acima do conteúdo */
+}
+
+.prev {
+    left: 20px; /* Posicione o botão à esquerda */
+}
+
+.next {
+    right: 20px; /* Posicione o botão à direita */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* A seção de contato deve estar claramente abaixo do carrossel */
+.contato {
+    background-color: gray;
+    padding: 40px;
+    margin-top: 20px; /* Mantém a margem superior */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os campos do formulário */
+}
+
+input, textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.button-enviar {
+    background-color: #2ecc71; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+.button-enviar:hover {
+    background-color: #27ae60; /* Cor do botão ao passar o mouse */
+}
